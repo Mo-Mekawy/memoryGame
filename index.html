@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- main stylesheet & script -->
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <h1 id="game-title">Memory Game</h1>
+    <div class="container">
+      <header id="game-info">
+        <div>
+          Hello:
+          <span data-user-name></span>
+        </div>
+        <div>
+          Wrong tries:
+          <span data-wrong-tries>0</span>
+        </div>
+      </header>
+      <div class="cards">
+        <!-- filled with js -->
+      </div>
+    </div>
+
+    <audio
+      data-audio="success"
+      src="audio/success-sound.mp3"
+      preload="auto"
+    ></audio>
+    <audio
+      data-audio="failure"
+      src="audio/failure-sound.mp3"
+      preload="auto"
+    ></audio>
+  </body>
+</html>
